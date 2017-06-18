@@ -5,7 +5,7 @@
       padding-left:20px;
       text-align:justify;
       background: rgba(0, 0, 0, 0);
-      font-family: 'Orbitron', sans-serif;
+    font-family: 'Trirong', serif;
       }
 .navbar::before{
         content: "";
@@ -59,7 +59,7 @@
       display: block;
       width: 100%;
       height: 80px;
-      background-image: url('img/Spark2.jpg');
+        background-image: url('img/Spark2.jpg');
    -webkit-filter: blur(2px);
    -moz-filter: blur(2px);
    -o-filter: blur(2px);
@@ -75,7 +75,7 @@
 
       }
       .navbar h2{
-        font-size: 20px;
+        font-size: 25px;
         margin-top: 10px;
         padding: 0;
       }
@@ -92,14 +92,18 @@
 
 }
  h4{
-  font-size: 40px;
-  font-family: 'Roboto Mono', monospace;
-
+  font-size: 30px;
+  font-family: 'Trirong', serif;
+  line-height: 45px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 p{
  font-size: 30px;
- font-family: 'Roboto Mono', monospace;
-
+font-family: 'Trirong', serif;
+ line-height: 45px;
+ padding-left: 50px;
+ padding-right: 50px;
 }
 .img-container{
   display: inline;
@@ -107,35 +111,34 @@ p{
 }
 .shaaslogo{
   display: inline-block;
-  transition: all 500ms ease-in;
-  filter: drop-shadow(6px 20px 5px rgba(40,40,40,0.8));
+  transition: all 250ms ease-in;
+  filter: drop-shadow(6px 10px 5px rgba(40,40,40,0.6));
   padding: 10px 20px;
 }
 .shaaslogo:hover{
-    transition: all 500ms both ease-in ;
-    filter: drop-shadow(6px 20px 10px rgba(40,40,40,0.8));
+    filter: drop-shadow(6px 10px 10px rgba(40,40,40,0.6));
     transform: translateY(-10px) scale(1.1);
-    cursor:default;
+    cursor:grab;
  }
 
  h2{
    font-size: 40px;
-   font-family: 'Orbitron', sans-serif;
+  font-family: 'Trirong', serif;
 
  }
 .bg-2{
-  background-image: url('img/Spark1.jpg');
+  background-image: url("img/turq2.jpg");
   background-attachment: fixed;
   background-size: cover;
   filter: grayscale(1) blur(3px);
 }
-.vid{
+/*.vid{
   opacity: 0.7;
   display:inline-block;
 }
 .vid:hover{
   opacity:1;
-}
+}*/
 .animateWho{
   animation: animateI 1s both ease-in-out;
 }
@@ -178,14 +181,16 @@ p{
  ul{
  text-align: left;
 font-size: 20px;
-font-family: 'Orbitron', sans-serif;}
+font-family: 'Trirong', serif;
+padding-left: 20px;
+padding-right: 20px;}
  #colu1{
         /*margin-left: 150px;*/
         opacity: 0;
 
         transform: rotateY(90deg)  translateX(80px);
         background: rgb(255, 219, 77);
-        height: 340px;
+        height: 350px;
 
  }
   #colu2{
@@ -193,12 +198,12 @@ font-family: 'Orbitron', sans-serif;}
           opacity: 0;
           background: rgb(255, 219, 77);
         transform: rotateY(-90deg)  translateX(-800px);
-        height: 340px;
+        height: 350px;
 
  }
  #colu3{
    background: rgb(255, 209, 26);
-   height: 340px;
+   height: 350px;
 
    opacity: 0;}
  .animateWhen1{
@@ -248,26 +253,25 @@ font-family: 'Orbitron', sans-serif;}
 
 }
 .bg-3{
-  background-image: url('img/tech1.jpg');
+  background-color: #263238;
   color: white;
 }
+
 #Calendar img{
   width: 240px;
-  left: 10px;
-  top: 5px;
   height: 240px;
   position: absolute;
-
+  margin: auto;
   filter: invert(1);
 }
+
 #Calendar{
   display: inline-block;
   background-color: rgba(0, 64, 255,0.6);
   border-radius: 50%;
-    width: 260px;
+  width: 260px;
   height: 260px;
   padding:95px 50px;
-
   text-align: center;
 
 }
