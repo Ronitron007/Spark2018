@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="style.css" />
   <title>Spark || Shaastra 2018</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
     <!--NAV BAR -->
     <div class="top">
 
@@ -26,13 +26,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><h1>Spark</h1></a>
+                <a class="navbar-brand active" href="#Intro"><h1>Spark</h1></a>
           </div>
             <div class="collapse navbar-collapse " id="myNavbar" >
               <ul class="nav navbar-nav ">
-
-
-
                     <li><a href="#Forwhom"><h2>About SPARK</h2></a></li>
                     <li><a href="#Contact"><h2>Structure</h2></a></li>
                     <li><a href="#when"><h2>When & Where</h2></a></li>
@@ -45,7 +42,7 @@
 
 
 
-  <div class="container-fluid bg-1 text-center">
+  <div class="container-fluid bg-1 text-center" id="Intro">
     <div >
 
 
@@ -59,7 +56,7 @@
 
 
   </div>
-    </div>
+  </div>
   <div class="container-fluid bg-2 text-center">
   <div id="Forwhom"><div class="GlowIT"> <h2>
   <strong>What is SPARK</strong></h2>
@@ -140,24 +137,67 @@ Spark has been conducted in the cities of Chennai, Mumbai, Pune, Delhi, Kolkata,
 
 </div>
 
-<div class="container-fluid bg-2 text-center">
-  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+<div class="container-fluid bg-3 text-center">
+  <div id="when">
+    <h2>When</h2>
+    <br />
     <div id="Calendar" class="bigo1">
-      <img src="img/Calendar.png"/>
-      <h2>July</h2>
+          <h2>July</h2>
+      <img src="img/Calendar.png" />
+
     </div>
   </div>
-  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+  <div class="container SouthInd">
+      <br />
+    <h2>Where</h2>
 
+    <div>
+      <ul class="StateList">
+        <li class="stateName " id="TagAndhra" >
+          Andhra Pradesh
+        </li>
+
+        <li class="stateName " id="TagKarn">
+          Karnataka
+        </li>
+        <li class="stateName " id="TagTelegn">
+          Telegana
+        </li>
+        <li class="stateName " id="TagTamil">
+          Tamil Nadu
+        </li>
+        <li class="stateName " id="TagKerala">
+          Kerala
+        </li>
+      </ul>
+    </div>
+    <div class="states" id="telegana">
+      <img src="img/telangana.png" / >
+    </div>
+    <div class="states" id="andhra">
+      <img src="img/andhra.png" />
+    </div>
+    <div class="states" id="karnataka">
+      <img src="img/karnataka.png" />
+    </div>
+    <div class="states" id="tamilnadu">
+      <img src="img/tamilnadu.png" />
+    </div>
+
+  <div class="states" id="kerala">
+    <img src='img/kerala.png' />
   </div>
+  <!-- <div class="states" id="outline">
+    <img src="img/5-states.png" />
+  </div> -->
 </div>
-
+</div>
 
 <script src="Sources/jquery.waypoints.min.js"></script>
 <script>
 
 var $who = $(".bg-2");
-var $where = $(".bg-3");
+var $where = $("#when");
 
 var $when = $(".bg-4");
 var $win = $(window);
@@ -165,12 +205,47 @@ var $colu1 = $('#colu1');
 var $colu2 = $('#colu2');
 var $glowit = $('.GlowIT');
 var $colu3 = $('#colu3');
-var $bigo1 = $('.bigo1');
-var $bigo5 = $('.bigo5');
-var $bigo4 = $('.bigo4');
-var $bigo2 = $('.bigo2');
+var $bigo1 = $('#telegana');
+var $bigo5 = $('#kerala');
+var $bigo4 = $('#tamilnadu');
+var $bigo2 = $('#karnataka');
+var $bigo3 = $('#andhra');
+var $tagAndh = $('#TagAndhra');
+var $tagTamil = $('#TagTamil');
+var $tagTelegn = $('#TagTelegn');
+var $tagKerala = $('#TagKerala');
+var $tagKarn = $('#TagKarn');
 
-
+$tagAndh.mouseenter(function(){
+  $bigo3.addClass("emboss");
+});
+$tagAndh.mouseleave(function(){
+  $bigo3.removeClass("emboss");
+});
+$tagTamil.mouseenter(function(){
+  $bigo4.addClass("emboss");
+});
+$tagTamil.mouseleave(function(){
+  $bigo4.removeClass("emboss");
+});
+$tagTelegn.mouseenter(function(){
+  $bigo1.addClass("emboss");
+});
+$tagTelegn.mouseleave(function(){
+  $bigo1.removeClass("emboss");
+});
+$tagKerala.mouseenter(function(){
+  $bigo5.addClass("emboss");
+});
+$tagKerala.mouseleave(function(){
+  $bigo5.removeClass("emboss");
+});
+$tagKarn.mouseenter(function(){
+  $bigo2.addClass("emboss");
+});
+$tagKarn.mouseleave(function(){
+  $bigo2.removeClass("emboss");
+});
   $who.waypoint(function(direction){
     if(direction == 'down'){
       $glowit.addClass("GlowIT1");
@@ -201,12 +276,12 @@ $where.waypoint(function(direction){
       $bigo2.addClass("bigon2");
         $bigo4.addClass("bigon4");
      $bigo5.addClass("bigon5");
-
+     $bigo3.addClass("bigon3");
 
     console.log("hi")
   }
 
-}, {offset : "40%"});
+}, {offset : "-10%"});
 
 
  </script>
