@@ -178,11 +178,11 @@ font-family: 'Dosis', sans-serif;
   100%{filter: grayscale(0) blur(0px);  }
 }
 .bg-1{
-  background-color: #BBDEFB;
+
      padding-bottom: 110px;
 }
 .bg-4{
-        background-color: #BBDEFB;
+
       padding-top: 200px;
       padding-bottom: 200px;
       color: rgb(100,100,100);
@@ -428,25 +428,32 @@ left: -2px;
   opacity: 0;
 }
 .bg-5{
-    background-color: #BBDEFB;
+  
   padding-top: 120px;
   padding-bottom: 500px;
   color: rgb(80,80,80);
 }
 
 .wrapper {
+
   margin-top: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
   display: inline-block;
   position: relative;
   opacity: 0;
   -webkit-perspective: 800px;
   perspective: 800px;
 }
+.wrapper:nth-child(2n+2) .card{
+  background: rgb(255, 219, 77);
+}
+
+.wrapper:nth-child(2n+1) .card{
+  background: rgb(255, 209, 26);
+}
 .card {
-  border: 1px solid;
-  border-radius: 10px;
+
+    box-shadow: 2px 2px 5px 5px rgba(100,100,100,0.7);
+
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
